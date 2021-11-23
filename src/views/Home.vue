@@ -1,18 +1,41 @@
 <template>
-  <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png" />
-    <HelloWorld msg="Welcome to Your Vue.js App" />
+  <div class="contenedor" >
+    <NavBar/>
+    <Tarjeta/>
+    <Tarjeta/>
+    <Tarjeta/>
+    <Tarjeta/>
+    <Tarjeta/>
+    <Tarjeta/>
+    <Tarjeta/>
+    <Tarjeta/>
+
   </div>
 </template>
 
 <script>
 // @ is an alias to /src
-import HelloWorld from "@/components/HelloWorld.vue";
+
+import NavBar from "@/components/NavBar/NavBar.vue";
+import Tarjeta from "@/components/Tarjeta/Tarjeta.vue";
+
+
 
 export default {
   name: "Home",
   components: {
-    HelloWorld,
+    
+    NavBar,
+    Tarjeta
   },
 };
 </script>
+
+<style scoped>
+.contenedor{
+  justify-content: space-between;
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+}
+</style>
